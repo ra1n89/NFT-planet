@@ -39,6 +39,24 @@
 				{"name":"planetDiametr","type":"uint256"},
 				{"name":"planetDistance","type":"uint256"}
 			]
+		},
+		{
+			"name": "setPlanetPrice",
+			"inputs": [
+				{"name":"planetID","type":"uint256"},
+				{"name":"price","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPlanetPrice",
+			"inputs": [
+				{"name":"planetID","type":"uint256"}
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
 		}
 	],
 	"data": [
@@ -50,6 +68,7 @@
 		{"name":"_timestamp","type":"uint64"},
 		{"name":"_constructorFlag","type":"bool"},
 		{"components":[{"name":"name","type":"string"},{"name":"diametr","type":"uint256"},{"name":"distanceFromTheSun","type":"uint256"}],"name":"planetsArr","type":"tuple[]"},
-		{"name":"planetsToOwner","type":"map(uint256,uint256)"}
+		{"name":"planetsToOwner","type":"map(uint256,uint256)"},
+		{"name":"planetsPrice","type":"map(uint256,uint256)"}
 	]
 }
